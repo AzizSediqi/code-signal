@@ -1,0 +1,4 @@
+def centuryFromYear(year):
+    # Add 99 to the year, so we can handle boundary years like 1700 correctly.
+    # If the year is 1700, adding 99 will give us 1799, which when divided by 100 will yield the 17th century.
+    return (year + 99) // 100
